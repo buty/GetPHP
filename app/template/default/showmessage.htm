@@ -1,0 +1,26 @@
+<!--{template head}-->
+<div style="margin-top:150px;">
+<div style="width: 60%; margin: 0pt auto;">
+<table width="100%" cellspacing="1" cellpadding="4" border="0" class="newfont03"  >
+<tbody>
+	<tr>
+		<td height="20" class="tablestyle_title" style="text-align:center">{lang('common','message_tip')}</td>
+	</tr>
+    <tr>
+			    <td width="80%" class="tablestyle_title" valign="middle" style="text-align:center">
+					<p style="font-size:15px;"  class="orange">{$message}</p>
+					<p style="font-size:12px;" class="op">
+						<!--{if $url_forward}-->
+							<a href="{$url_forward}">{lang('common','page_jumpping')}...</a>
+						<!--{else}-->
+							<a style="font-size:12px;" href="javascript:history.go(-1);">{lang('common','back_prev_page')}</a> | 
+							<a href="{SITE_URL}">{lang('common','back_index_page')}</a>
+						<!--{/if}-->
+					</p>
+				</td>
+    </tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--{template foot}-->

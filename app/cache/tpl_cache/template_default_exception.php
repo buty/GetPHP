@@ -1,0 +1,1 @@
+<?php if(!defined('APPNAME')) exit('Access Denied');?><?php subtplcheck('template/default/exception', '1427964941', 'template/default/exception');?><?php if(!defined('APPNAME')) exit('Access Denied');?><?php subtplcheck('template/default/exception', '1427964941', 'template/default/exception');?>exception: <?php echo $msg?>
