@@ -1,4 +1,4 @@
-<?php if(!defined('APPNAME')) exit('Access Denied');?><?php subtplcheck('template/default/Index/index', '1427967844', 'template/default/Index/index');?><?php if(!defined('APPNAME')) exit('Access Denied');?><?php subtplcheck('template/default/Index/index', '1427967844', 'template/default/Index/index');?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<?php if(!defined('APPNAME')) exit('Access Denied');?><?php subtplcheck('template/default/Index/index', '1428676754', 'template/default/Index/index');?><?php if(!defined('APPNAME')) exit('Access Denied');?><?php subtplcheck('template/default/Index/index', '1428676754', 'template/default/Index/index');?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,7 +24,7 @@ nono
 <?php } ?>
 
 
-{date('Y-m-d',"1548880000")}
+<?php echo date('Y-m-d',"1548880000"); ?>
 
 <?php echo $arr['a']['b']?>
 </body>

@@ -33,11 +33,20 @@ class Dispatcher {
 	}
 
 	public function getBaseUrl() {
-		$host = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'];
-		$port_suffix = $_SERVER['SERVER_PORT'] == '80' ? '' : ':' . $_SERVER['SERVER_PORT'];
+		$host = $this->_getHost();
+		$port_suffix = ($_SERVER['SERVER_PORT'] == '80' OR  $_SERVER['SERVER_PORT'] == '443') ? '' : ':' . $_SERVER['SERVER_PORT'];
 		$path_suffix = $this->_getUrlPrefixPath();
 
 		return $host . $port_suffix . $path_suffix;
+	}
+
+	private function _getHost() {
+		if($_SERVER['SERVER_PORT'] == '443') {
+			$host = 'https://' . $_SERVER['HTTP_HOST'];
+		} else {
+			$host = 'http://' . $_SERVER['HTTP_HOST'];
+		}
+		return $host;
 	}
 
 	private function _getUrlPrefixPath() {

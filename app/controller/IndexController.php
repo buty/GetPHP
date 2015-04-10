@@ -5,12 +5,17 @@ class IndexController extends Controll {
 		
 	}
 	public function index() {
-        $arr = array('a' => array('b' => 'c'));
-        $this->View->assign('arr', $arr);
-        $this->View->assign('gogo', 'bb');
-        $this->View->assign('bb', 'eeee');
+        		$arr = array('a' => array('b' => 'c'));
+        		$this->View->assign('arr', $arr);
+        		$this->View->assign('gogo', 'bb');
+        		$this->View->assign('bb', 'eeee');
 		$this->View->display('Index/index');
 	}
+
+	public function gogo() {
+		echo 'test';
+	}
+
 	public function captcha() {
 		echo $this->Lib->Captcha->captcha_code();
 	}
